@@ -36,6 +36,13 @@ namespace TheMindSpire.Controllers
         {
             return View();
         }
+
+        // Google Search Console Verification
+        [Route("googlea681bfa1f085f740.html")]
+        public IActionResult GoogleVerification()
+        {
+            return Content("google-site-verification: googlea681bfa1f085f740.html", "text/html");
+        }
        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
