@@ -11,8 +11,20 @@ namespace TheMindSpire
 
             builder.Services.AddControllersWithViews();
 
-            builder.Services.AddDbContext<MindSpireDbContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("MindSpireDbConnectionString")));
+            // Use SQLite for cloud deployment, SQL Server for local
+            var connectionString = builder.Configuration.GetConnectionString("MindSpireDbConnectionString");
+            if (connectionString != null && connectionString.Contains("Data Source=") && connectionString.EndsWith(".db"))
+            {
+                // SQLite for cloud deployment
+                builder.Services.AddDbContext<MindSpireDbContext>(options =>
+                    options.UseSqlite(connectionString));
+            }
+            else
+            {
+                // SQL Server for local development
+                builder.Services.AddDbContext<MindSpireDbContext>(options =>
+                    options.UseSqlServer(connectionString));
+            }
 
             var app = builder.Build();
 

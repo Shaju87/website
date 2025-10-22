@@ -1,0 +1,217 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|c:\\users\\shahabazshaik\\onedrive - themindspire\\documents\\c# prac\\themindspire\\themindspire\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|solutionrelative:themindspire\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|c:\\users\\shahabazshaik\\onedrive - themindspire\\documents\\c# prac\\themindspire\\themindspire\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|solutionrelative:themindspire\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|c:\\users\\shahabazshaik\\onedrive - themindspire\\documents\\c# prac\\themindspire\\themindspire\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|solutionrelative:themindspire\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|c:\\users\\shahabazshaik\\onedrive - themindspire\\documents\\c# prac\\themindspire\\themindspire\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|solutionrelative:themindspire\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|c:\\users\\shahabazshaik\\onedrive - themindspire\\documents\\c# prac\\themindspire\\themindspire\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|solutionrelative:themindspire\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|c:\\users\\shahabazshaik\\onedrive - themindspire\\documents\\c# prac\\themindspire\\themindspire\\views\\services\\enterpriseweb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|solutionrelative:themindspire\\views\\services\\enterpriseweb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|c:\\users\\shahabazshaik\\onedrive - themindspire\\documents\\c# prac\\themindspire\\themindspire\\views\\services\\mobileapps.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|solutionrelative:themindspire\\views\\services\\mobileapps.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|c:\\users\\shahabazshaik\\onedrive - themindspire\\documents\\c# prac\\themindspire\\themindspire\\views\\services\\aianalytics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|solutionrelative:themindspire\\views\\services\\aianalytics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|c:\\users\\shahabazshaik\\onedrive - themindspire\\documents\\c# prac\\themindspire\\themindspire\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|solutionrelative:themindspire\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|c:\\users\\shahabazshaik\\onedrive - themindspire\\documents\\c# prac\\themindspire\\themindspire\\views\\services\\webdevelopment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|solutionrelative:themindspire\\views\\services\\webdevelopment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|c:\\users\\shahabazshaik\\onedrive - themindspire\\documents\\c# prac\\themindspire\\themindspire\\views\\services\\cloudsolutions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|solutionrelative:themindspire\\views\\services\\cloudsolutions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|c:\\users\\shahabazshaik\\onedrive - themindspire\\documents\\c# prac\\themindspire\\themindspire\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED9D5562-0C4A-43E2-845D-DD180C9ACBE6}|TheMindSpire\\TheMindSpire.csproj|solutionrelative:themindspire\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "TheMindSpire\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "TheMindSpire\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAH8AAABgZmZmZmYgwJoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T05:48:52.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MobileApps.cshtml",
+              "DocumentMoniker": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Services\\MobileApps.cshtml",
+              "RelativeDocumentMoniker": "TheMindSpire\\Views\\Services\\MobileApps.cshtml",
+              "ToolTip": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Services\\MobileApps.cshtml",
+              "RelativeToolTip": "TheMindSpire\\Views\\Services\\MobileApps.cshtml",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAAAAQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T05:09:15.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WebDevelopment.cshtml",
+              "DocumentMoniker": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Services\\WebDevelopment.cshtml",
+              "RelativeDocumentMoniker": "TheMindSpire\\Views\\Services\\WebDevelopment.cshtml",
+              "ToolTip": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Services\\WebDevelopment.cshtml",
+              "RelativeToolTip": "TheMindSpire\\Views\\Services\\WebDevelopment.cshtml",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAAAJIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T05:06:14.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TheMindSpire\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TheMindSpire\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAGIDAAAAAAAAAAAAAGIDAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T05:00:15.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "TheMindSpire\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "TheMindSpire\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAAAI4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T04:55:02.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "TheMindSpire\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "TheMindSpire\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAE0AAAAAZmZmZmYkwDUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T04:59:03.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CloudSolutions.cshtml",
+              "DocumentMoniker": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Services\\CloudSolutions.cshtml",
+              "RelativeDocumentMoniker": "TheMindSpire\\Views\\Services\\CloudSolutions.cshtml",
+              "ToolTip": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Services\\CloudSolutions.cshtml",
+              "RelativeToolTip": "TheMindSpire\\Views\\Services\\CloudSolutions.cshtml",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAAAJMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T05:10:43.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Services.cshtml",
+              "DocumentMoniker": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Home\\Services.cshtml",
+              "RelativeDocumentMoniker": "TheMindSpire\\Views\\Home\\Services.cshtml",
+              "ToolTip": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Home\\Services.cshtml",
+              "RelativeToolTip": "TheMindSpire\\Views\\Home\\Services.cshtml",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAAFMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T05:22:09.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AIAnalytics.cshtml",
+              "DocumentMoniker": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Services\\AIAnalytics.cshtml",
+              "RelativeDocumentMoniker": "TheMindSpire\\Views\\Services\\AIAnalytics.cshtml",
+              "ToolTip": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Services\\AIAnalytics.cshtml",
+              "RelativeToolTip": "TheMindSpire\\Views\\Services\\AIAnalytics.cshtml",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAuwBUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T05:12:04.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnterpriseWeb.cshtml",
+              "DocumentMoniker": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Services\\EnterpriseWeb.cshtml",
+              "RelativeDocumentMoniker": "TheMindSpire\\Views\\Services\\EnterpriseWeb.cshtml",
+              "ToolTip": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Services\\EnterpriseWeb.cshtml",
+              "RelativeToolTip": "TheMindSpire\\Views\\Services\\EnterpriseWeb.cshtml",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAAAJEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T05:26:07.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServicesController.cs",
+              "DocumentMoniker": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Controllers\\ServicesController.cs",
+              "RelativeDocumentMoniker": "TheMindSpire\\Controllers\\ServicesController.cs",
+              "ToolTip": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Controllers\\ServicesController.cs",
+              "RelativeToolTip": "TheMindSpire\\Controllers\\ServicesController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAmwBsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T05:25:29.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TheMindSpire\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ShahabazShaik\\OneDrive - TheMindSpire\\Documents\\C# prac\\TheMindSpire\\TheMindSpire\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TheMindSpire\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T04:26:26.266Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
