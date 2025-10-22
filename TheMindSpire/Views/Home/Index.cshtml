@@ -1,0 +1,872 @@
+﻿@model TheMindSpire.Models.ContactData.ContactUs
+
+
+@{
+    ViewData["Title"] = "TheMindSpire - Leading Software Company";
+}
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    /* Reset and Base Styles */
+    * {
+        
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #334155;
+        background-color: #ffffff;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+
+    /* Header Styles */
+    .header {
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .nav {
+        padding: 16px 0;
+    }
+
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-logo h2 {
+        color: #2563EB;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 32px;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #64748B;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        position: relative;
+    }
+
+    .nav-link:hover {
+        color: #2563EB;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: #2563EB;
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    .nav-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 24px;
+        height: 3px;
+        background-color: #64748B;
+        margin: 3px 0;
+        transition: 0.3s;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        padding: 120px 0 80px;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+        align-items: center;
+    }
+
+    .hero-title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #1e293b;
+        margin-bottom: 24px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+        color: #64748b;
+        margin-bottom: 32px;
+        line-height: 1.8;
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 14px 28px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        background-color: #2563EB;
+        color: white;
+        border-color: #2563EB;
+    }
+
+    .btn-primary:hover {
+        background-color: #1d4ed8;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+    }
+
+    .btn-secondary {
+        background-color: transparent;
+        color: #2563EB;
+        border-color: #2563EB;
+    }
+
+    .btn-secondary:hover {
+        background-color: #2563EB;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    .btn-full {
+        width: 100%;
+    }
+
+    /* Hero Graphics */
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-graphic {
+        position: relative;
+        width: 400px;
+        height: 400px;
+    }
+
+    .floating-card {
+        position: absolute;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .card-1 {
+        width: 120px;
+        height: 80px;
+        top: 50px;
+        left: 50px;
+        background: linear-gradient(135deg, #2563EB, #3b82f6);
+        animation-delay: 0s;
+    }
+
+    .card-2 {
+        width: 100px;
+        height: 100px;
+        top: 150px;
+        right: 50px;
+        background: linear-gradient(135deg, #0d9488, #14b8a6);
+        animation-delay: 2s;
+    }
+
+    .card-3 {
+        width: 140px;
+        height: 70px;
+        bottom: 80px;
+        left: 80px;
+        background: linear-gradient(135deg, #f97316, #fb923c);
+        animation-delay: 4s;
+    }
+
+    @@keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+    }
+
+    /* Services Section */
+    .services {
+        padding: 80px 0;
+        background-color: #ffffff;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+    .section-title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #1e293b;
+        margin-bottom: 16px;
+    }
+
+    .section-description {
+        font-size: 18px;
+        color: #64748b;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 32px;
+    }
+
+    .service-card {
+        background: white;
+        padding: 40px 32px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        text-align: center;
+        border: 1px solid #f1f5f9;
+    }
+
+    .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .service-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    }
+
+    .icon-web, .icon-mobile, .icon-cloud, .icon-ai, .icon-enterprise-web {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    .icon-web { background: linear-gradient(135deg, #2563EB, #3b82f6); }
+    .icon-mobile { background: linear-gradient(135deg, #0d9488, #14b8a6); }
+    .icon-cloud { background: linear-gradient(135deg, #7c3aed, #8b5cf6); }
+    .icon-ai { background: linear-gradient(135deg, #f97316, #fb923c); }
+    .icon-enterprise-web {
+        background: linear-gradient(135deg, #a0522d, #8b4513);
+    }
+
+    .service-title {
+        font-size: 24px;
+        font-weight: 600;
+        color: #1e293b;
+        margin-bottom: 16px;
+    }
+
+    .service-description {
+        color: #64748b;
+        line-height: 1.7;
+    }
+
+    /* About Section */
+    .about {
+        padding: 80px 0;
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    }
+
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+        align-items: center;
+    }
+
+    .about-description {
+        font-size: 18px;
+        color: #64748b;
+        line-height: 1.8;
+        margin-bottom: 40px;
+    }
+
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .stat {
+        text-align: center;
+        padding: 24px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .stat-number {
+        font-size: 32px;
+        font-weight: 700;
+        color: #2563EB;
+        margin-bottom: 8px;
+    }
+
+    .stat-label {
+        color: #64748b;
+        font-weight: 500;
+    }
+
+    .about-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-graphic {
+        width: 300px;
+        height: 300px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .code-block {
+        width: 200px;
+        height: 150px;
+        background: #1e293b;
+        border-radius: 8px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .code-line {
+        height: 4px;
+        background: #64748b;
+        border-radius: 2px;
+    }
+
+    .code-line:nth-child(1) { width: 80%; background: #2563EB; }
+    .code-line:nth-child(2) { width: 60%; background: #0d9488; }
+    .code-line:nth-child(3) { width: 90%; background: #f97316; }
+    .code-line:nth-child(4) { width: 70%; background: #7c3aed; }
+
+    /* Contact Section */
+    .contact {
+        padding: 80px 0;
+        background-color: #ffffff;
+    }
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+    }
+
+    .contact-item {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 32px;
+    }
+
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #2563EB, #3b82f6);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .icon-location, .icon-phone, .icon-email {
+        width: 24px;
+        height: 24px;
+        background: white;
+        border-radius: 4px;
+    }
+
+    .contact-details h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1e293b;
+        margin-bottom: 8px;
+    }
+
+    .contact-details p {
+        color: #64748b;
+        line-height: 1.6;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-input {
+        padding: 16px;
+        border: 2px solid #e2e8f0;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
+        font-family: inherit;
+    }
+
+    .form-input:focus {
+        outline: none;
+        border-color: #2563EB;
+    }
+
+    .form-textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #1e293b;
+        color: #94a3b8;
+        padding: 64px 0 32px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .footer-title {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+
+    .footer-description {
+        line-height: 1.7;
+    }
+
+    .footer-heading {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-links a {
+        color: #94a3b8;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: #ffffff;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 16px;
+    }
+
+    .social-link {
+        color: #94a3b8;
+        text-decoration: none;
+        padding: 8px 16px;
+        border: 1px solid #334155;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+        color: #ffffff;
+        border-color: #2563EB;
+        background-color: #2563EB;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 32px;
+        border-top: 1px solid #334155;
+    }
+
+    /* Responsive Design */
+    @@media (max-width: 1024px) {
+        .hero-container,
+        .about-content,
+        .contact-content {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .hero-title {
+            font-size: 40px;
+        }
+
+        .section-title {
+            font-size: 32px;
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .nav-menu {
+            display: none;
+        }
+
+        .nav-toggle {
+            display: flex;
+        }
+
+        .hero {
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 32px;
+        }
+
+        .hero-buttons {
+            justify-content: center;
+        }
+
+        .hero-graphic {
+            width: 300px;
+            height: 300px;
+        }
+
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .stats {
+            grid-template-columns: 1fr;
+        }
+
+        .footer-content {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .section-title {
+            font-size: 28px;
+        }
+    }
+
+    @@media (max-width: 480px) {
+        .hero-title {
+            font-size: 28px;
+        }
+
+        .hero-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn {
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-content {
+            grid-template-columns: 1fr;
+        }
+
+        .social-links {
+            flex-wrap: wrap;
+        }
+    }
+
+    /* Smooth Scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Additional Utility Classes */
+    .text-center { text-align: center; }
+    .text-left { text-align: left; }
+    .text-right { text-align: right; }
+
+    .mb-16 { margin-bottom: 16px; }
+    .mb-24 { margin-bottom: 24px; }
+    .mb-32 { margin-bottom: 32px; }
+
+    .mt-16 { margin-top: 16px; }
+    .mt-24 { margin-top: 24px; }
+    .mt-32 { margin-top: 32px; }
+</style>
+
+<body>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Innovative Software Solutions for Your Business</h1>
+                <p class="hero-description">
+                    We transform ideas into powerful digital experiences. Our expert team delivers cutting-edge software solutions that drive growth and efficiency for businesses worldwide.
+                </p>
+                <div class="hero-buttons">
+                    <a asp-controller="ContactUs" asp-action="Index" class="btn btn-primary">Get Started</a>
+                    <a asp-controller="Home" asp-action="Services" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-graphic">
+                    <div class="floating-card card-1"></div>
+                    <div class="floating-card card-2"></div>
+                    <div class="floating-card card-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-description">
+                Comprehensive software solutions tailored to meet your unique business needs
+            </p>
+        </div>
+        <div class="services-grid">
+
+            <!-- Enterprise Web Solutions (NEW) -->
+            <div class="service-card">
+                <div class="service-icon"><div class="icon-enterprise-web"></div></div>
+                <h3 class="service-title">Enterprise Web Solutions</h3>
+                <p class="service-description">
+                    Robust web applications specifically designed for ERP and enterprise systems to enhance business efficiency.
+                </p>
+                <a asp-controller="Services" asp-action="EnterpriseWeb" class="btn-service">View Details</a>
+            </div>
+
+            <!-- Web Development -->
+            <div class="service-card">
+                <div class="service-icon"><div class="icon-web"></div></div>
+                <h3 class="service-title">Web Development</h3>
+                <p class="service-description">
+                    Custom web applications built with modern technologies for optimal performance and user experience.
+                </p>
+                <a asp-controller="Services" asp-action="WebDevelopment" class="btn-service">View Details</a>
+            </div>
+
+            <!-- Mobile Apps -->
+            <div class="service-card">
+                <div class="service-icon"><div class="icon-mobile"></div></div>
+                <h3 class="service-title">Mobile Apps</h3>
+                <p class="service-description">
+                    Native and cross-platform mobile applications that engage users and drive business growth.
+                </p>
+                <a asp-controller="Services" asp-action="MobileApps" class="btn-service">View Details</a>
+            </div>
+
+            <!-- Cloud Solutions -->
+            <div class="service-card">
+                <div class="service-icon"><div class="icon-cloud"></div></div>
+                <h3 class="service-title">Cloud Solutions</h3>
+                <p class="service-description">
+                    Scalable cloud infrastructure and migration services to optimize your business operations.
+                </p>
+                <a asp-controller="Services" asp-action="CloudSolutions" class="btn-service">View Details</a>
+            </div>
+
+            <!-- AI & Analytics -->
+            <div class="service-card">
+                <div class="service-icon"><div class="icon-ai"></div></div>
+                <h3 class="service-title">AI & Analytics</h3>
+                <p class="service-description">
+                    Intelligent solutions and data analytics to unlock insights and automate processes.
+                </p>
+                <a asp-controller="Services" asp-action="AIAnalytics" class="btn-service">View Details</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About TheMindSpire</h2>
+                    <p class="about-description">
+                        TheMindSpire is a forward-thinking startup specializing in ERP solutions and comprehensive software services.
+                        Our goal is to help businesses streamline operations, improve efficiency, and unlock growth opportunities through modern technology.
+                        From customized ERP systems to web and mobile applications, we transform complex business processes into intuitive digital solutions.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3 class="stat-number">10+</h3>
+                            <p class="stat-label">ERP Projects Delivered</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat-number">12+</h3>
+                            <p class="stat-label">Expert Team Members</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat-number">1</h3>
+                            <p class="stat-label">Year in Operation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-graphic">
+                        <div class="code-block">
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Ready to transform your business with innovative software solutions?
+                </p>
+            </div>
+
+            @if (ViewBag.Message != null)
+            {
+                <div class="success-message">@ViewBag.Message</div>
+            }
+
+            <div class="contact-content">
+                <!-- Left side contact info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <div class="icon-location"></div>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Office</h4>
+                            <p>Hi-Tech City, Hyderabad</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <div class="icon-phone"></div>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>1234567899</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <div class="icon-email"></div>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>hrteam@themindspire.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side form -->
+                <div class="contact-form">
+                    <form asp-action="Index" asp-controller="ContactUs" method="post" class="form">
+                        <div class="form-group">
+                            <input asp-for="Name" class="form-input" placeholder="Your Name" required />
+                        </div>
+                        <div class="form-group">
+                            <input asp-for="Email" type="email" class="form-input" placeholder="Your Email" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea asp-for="Message" class="form-input form-textarea" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+</body>

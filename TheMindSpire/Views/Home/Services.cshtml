@@ -1,0 +1,162 @@
+﻿<style>
+    
+    .services {
+        margin-top: 30px;
+        padding: 80px 0;
+        background-color: #ffffff;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+    .section-title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #1e293b;
+        margin-bottom: 16px;
+    }
+
+    .section-description {
+        font-size: 18px;
+        color: #64748b;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 32px;
+    }
+
+    .service-card {
+        background: white;
+        padding: 40px 32px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        text-align: center;
+        border: 1px solid #f1f5f9;
+    }
+
+    .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .service-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    }
+
+    .icon-web, .icon-mobile, .icon-cloud, .icon-ai, .icon-enterprise-web {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    .icon-web {
+        background: linear-gradient(135deg, #2563EB, #3b82f6);
+    }
+
+    .icon-mobile {
+        background: linear-gradient(135deg, #0d9488, #14b8a6);
+    }
+
+    .icon-cloud {
+        background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+    }
+
+    .icon-ai {
+        background: linear-gradient(135deg, #f97316, #fb923c);
+    }
+
+    .icon-enterprise-web {
+        background: linear-gradient(135deg, #a0522d, #8b4513);
+    }
+
+    .service-title {
+        font-size: 24px;
+        font-weight: 600;
+        color: #1e293b;
+        margin-bottom: 16px;
+    }
+
+    .service-description {
+        color: #64748b;
+        line-height: 1.7;
+    }
+</style>
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-description">
+                Comprehensive software solutions tailored to meet your unique business needs
+            </p>
+        </div>
+        <div class="services-grid">
+
+            <!-- Enterprise Web Solutions (NEW) -->
+            <div class="service-card">
+                <div class="service-icon"><div class="icon-enterprise-web"></div></div>
+                <h3 class="service-title">Enterprise Web Solutions</h3>
+                <p class="service-description">
+                    Robust web applications specifically designed for ERP and enterprise systems to enhance business efficiency.
+                </p>
+                <a asp-controller="Services" asp-action="EnterpriseWeb" class="btn-service">View Details</a>
+            </div>
+
+            <!-- Web Development -->
+            <div class="service-card">
+                <div class="service-icon"><div class="icon-web"></div></div>
+                <h3 class="service-title">Web Development</h3>
+                <p class="service-description">
+                    Custom web applications built with modern technologies for optimal performance and user experience.
+                </p>
+                <a asp-controller="Services" asp-action="WebDevelopment" class="btn-service">View Details</a>
+            </div>
+
+            <!-- Mobile Apps -->
+            <div class="service-card">
+                <div class="service-icon"><div class="icon-mobile"></div></div>
+                <h3 class="service-title">Mobile Apps</h3>
+                <p class="service-description">
+                    Native and cross-platform mobile applications that engage users and drive business growth.
+                </p>
+                <a asp-controller="Services" asp-action="MobileApps" class="btn-service">View Details</a>
+            </div>
+
+            <!-- Cloud Solutions -->
+            <div class="service-card">
+                <div class="service-icon"><div class="icon-cloud"></div></div>
+                <h3 class="service-title">Cloud Solutions</h3>
+                <p class="service-description">
+                    Scalable cloud infrastructure and migration services to optimize your business operations.
+                </p>
+                <a asp-controller="Services" asp-action="CloudSolutions" class="btn-service">View Details</a>
+            </div>
+
+            <!-- AI & Analytics -->
+            <div class="service-card">
+                <div class="service-icon"><div class="icon-ai"></div></div>
+                <h3 class="service-title">AI & Analytics</h3>
+                <p class="service-description">
+                    Intelligent solutions and data analytics to unlock insights and automate processes.
+                </p>
+                <a asp-controller="Services" asp-action="AIAnalytics" class="btn-service">View Details</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+                

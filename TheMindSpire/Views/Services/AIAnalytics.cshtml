@@ -1,0 +1,277 @@
+﻿@{
+    ViewData["Title"] = "AI & Analytics Solutions";
+}
+
+<style>
+    .ai-section {
+        padding: 100px 0;
+        background: linear-gradient(135deg, #f5f8ff, #e8f0ff);
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .ai-container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+        .section-header h2 {
+            font-size: 2.8rem;
+            color: #001f3f;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #0078d7, #00b4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+    /* Grid Layout */
+    .categories-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+    }
+
+    /* Card Styles */
+    .category-card {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        border-top: 6px solid #0078d7;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0,120,215,0.05) 0%, transparent 70%);
+            transform: rotate(45deg);
+            pointer-events: none;
+        }
+
+        .category-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-top-color: #00b4ff;
+        }
+
+        /* Card Titles */
+        .category-card h3 {
+            color: #0078d7;
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover h3 {
+            transform: scale(1.05);
+        }
+
+        .category-card p {
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+    /* Subcategory List */
+    .subcategory-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .subcategory-list li {
+            margin: 10px 0;
+            background: #f4f9ff;
+            border-left: 5px solid #0078d7;
+            padding: 10px 14px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+            .subcategory-list li::before {
+                content: '🤖';
+                margin-right: 8px;
+            }
+
+            .subcategory-list li:hover {
+                background: #e0f2ff;
+                transform: translateX(5px);
+            }
+
+        .subcategory-list strong {
+            color: #004d99;
+        }
+
+    /* Button Styles */
+    .learn-more-btn {
+        display: inline-block;
+        margin-top: 1rem;
+        background: linear-gradient(90deg, #0078d7, #00b4ff);
+        color: white;
+        padding: 12px 22px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .learn-more-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+    /* Floating animation for cards */
+    keyframes float {
+        0%, 100%
+
+    {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    }
+
+    .category-card {
+        animation: float 6s ease-in-out infinite;
+    }
+
+        /* Gradient accent at bottom of card */
+        .category-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, #0078d7, #00b4ff);
+            border-radius: 0 0 20px 20px;
+        }
+
+</style>
+
+<section class="ai-section">
+    <div class="ai-container">
+        <div class="section-header">
+            <h2>AI & Analytics</h2>
+            <p>
+                Unlock the power of Artificial Intelligence and Data Analytics to make smarter business decisions,
+                automate processes, and gain deeper insights into your operations.
+            </p>
+        </div>
+
+        <div class="categories-grid">
+
+            
+            <div class="category-card">
+                <h3>Machine Learning Solutions</h3>
+                <p>
+                    Intelligent systems that learn from data to predict trends, optimize operations, and improve user experiences.
+                </p>
+                <ul class="subcategory-list">
+                    <li><strong>Predictive Analytics:</strong> Forecast future trends and outcomes using statistical models.</li>
+                    <li><strong>Recommendation Systems:</strong> Deliver personalized experiences like Netflix and Amazon.</li>
+                    <li><strong>Fraud Detection:</strong> Identify anomalies and fraudulent activities in real time.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+            
+            <div class="category-card">
+                <h3>Natural Language Processing (NLP)</h3>
+                <p>
+                    Transform unstructured text data into meaningful insights and conversational AI experiences.
+                </p>
+                <ul class="subcategory-list">
+                    <li><strong>Chatbots & Virtual Assistants:</strong> AI-driven bots for customer support and engagement.</li>
+                    <li><strong>Sentiment Analysis:</strong> Understand emotions and feedback from users.</li>
+                    <li><strong>Text Summarization:</strong> Extract key insights from lengthy documents automatically.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+          
+            <div class="category-card">
+                <h3>Computer Vision</h3>
+                <p>
+                    Empower your applications with the ability to “see” and interpret visual information intelligently.
+                </p>
+                <ul class="subcategory-list">
+                    <li><strong>Image Recognition:</strong> Detect and classify objects in images or videos.</li>
+                    <li><strong>Facial Recognition:</strong> Identify individuals for security or personalization.</li>
+                    <li><strong>OCR Solutions:</strong> Convert scanned images and PDFs into editable, searchable data.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+           
+            <div class="category-card">
+                <h3>Data Analytics & Visualization</h3>
+                <p>
+                    Transform complex datasets into actionable insights with stunning visual reports and dashboards.
+                </p>
+                <ul class="subcategory-list">
+                    <li><strong>Business Intelligence (BI):</strong> Interactive dashboards using Power BI, Tableau, or Looker.</li>
+                    <li><strong>Data Warehousing:</strong> Centralized data storage for analytics and reporting.</li>
+                    <li><strong>ETL Pipelines:</strong> Streamlined data collection and transformation for real-time insights.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+         
+            <div class="category-card">
+                <h3>Automation & RPA</h3>
+                <p>
+                    Automate repetitive business tasks with Robotic Process Automation and AI-powered workflows.
+                </p>
+                <ul class="subcategory-list">
+                    <li><strong>Process Automation:</strong> Use tools like UiPath and Power Automate to eliminate manual work.</li>
+                    <li><strong>AI Bots:</strong> Smart agents that learn and adapt to business logic.</li>
+                    <li><strong>Document Automation:</strong> Extract and process data from documents automatically.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+            
+            <div class="category-card">
+                <h3>AI Integration & Consulting</h3>
+                <p>
+                    Strategic consulting and AI integration services to help businesses adopt data-driven decision-making.
+                </p>
+                <ul class="subcategory-list">
+                    <li><strong>AI Strategy Development:</strong> Identify opportunities for AI adoption.</li>
+                    <li><strong>Custom AI Models:</strong> Develop and train models tailored to your business goals.</li>
+                    <li><strong>Integration Services:</strong> Embed AI capabilities into your existing systems.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+        </div>
+    </div>
+</section>

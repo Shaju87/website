@@ -1,0 +1,263 @@
+﻿@{
+    ViewData["Title"] = "Cloud Solutions";
+}
+
+<style>
+    .cloud-section {
+        padding: 100px 0;
+        background: linear-gradient(135deg, #e8f4ff, #f0f8ff);
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .cloud-container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+        .section-header h2 {
+            font-size: 2.8rem;
+            color: #003366;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #0096d6, #00b4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+    /* Grid Layout */
+    .categories-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+    }
+
+    /* Card Styles */
+    .category-card {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        border-top: 6px solid #0096d6;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0,150,214,0.05) 0%, transparent 70%);
+            transform: rotate(45deg);
+            pointer-events: none;
+        }
+
+        .category-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-top-color: #00b4ff;
+        }
+
+        /* Card Titles */
+        .category-card h3 {
+            color: #0078d7;
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover h3 {
+            transform: scale(1.05);
+        }
+
+        .category-card p {
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+    /* Subcategory List */
+    .subcategory-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .subcategory-list li {
+            margin: 10px 0;
+            background: #f4faff;
+            border-left: 5px solid #0096d6;
+            padding: 10px 14px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+            .subcategory-list li::before {
+                content: '☁️';
+                margin-right: 8px;
+            }
+
+            .subcategory-list li:hover {
+                background: #e2f4ff;
+                transform: translateX(5px);
+            }
+
+        .subcategory-list strong {
+            color: #005fa3;
+        }
+
+    /* Button Styles */
+    .learn-more-btn {
+        display: inline-block;
+        margin-top: 1rem;
+        background: linear-gradient(90deg, #0096d6, #00b4ff);
+        color: white;
+        padding: 12px 22px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .learn-more-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+    /* Floating animation for cards */
+    keyframes float {
+        0%, 100%
+
+    {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    }
+
+    .category-card {
+        animation: float 6s ease-in-out infinite;
+    }
+
+        /* Gradient accent at bottom of card */
+        .category-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, #0096d6, #00b4ff);
+            border-radius: 0 0 20px 20px;
+        }
+
+</style>
+
+<section class="cloud-section">
+    <div class="cloud-container">
+        <div class="section-header">
+            <h2>Cloud Solutions</h2>
+            <p>
+                Empower your business with scalable, secure, and efficient cloud solutions. We design, deploy, and manage cloud infrastructures
+                that help you reduce costs, enhance performance, and ensure business continuity.
+            </p>
+        </div>
+
+        <div class="categories-grid">
+
+           
+            <div class="category-card">
+                <h3>Cloud Infrastructure</h3>
+                <p>
+                    Robust cloud environments tailored to meet performance, scalability, and security needs.
+                </p>
+                <ul class="subcategory-list">
+                    <li><strong>Infrastructure as a Service (IaaS):</strong> On-demand computing resources and virtualized hardware.</li>
+                    <li><strong>Platform as a Service (PaaS):</strong> Developer-friendly environments for faster app deployment.</li>
+                    <li><strong>Hybrid Cloud:</strong> Combine public and private clouds for flexible scalability.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+            
+            <div class="category-card">
+                <h3>Cloud Migration</h3>
+                <p>
+                    Smooth transition of your applications, databases, and workloads to the cloud without downtime.
+                </p>
+                <ul class="subcategory-list">
+                    <li><strong>Application Migration:</strong> Move business apps from on-premise to cloud environments.</li>
+                    <li><strong>Data Migration:</strong> Secure and reliable transfer of databases and storage systems.</li>
+                    <li><strong>Serverless Transition:</strong> Re-architect applications for cloud-native deployment.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+           
+            <div class="category-card">
+                <h3>Cloud Security</h3>
+                <p>
+                    Advanced security protocols to protect your cloud assets, data, and user access.
+                </p>
+                <ul class="subcategory-list">
+                    <li><strong>Identity & Access Management:</strong> Ensure secure access controls across cloud resources.</li>
+                    <li><strong>Encryption & Compliance:</strong> Protect sensitive data and meet regulatory standards.</li>
+                    <li><strong>Threat Monitoring:</strong> Continuous scanning and AI-based intrusion prevention.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+            <div class="category-card">
+                <h3>Cloud DevOps & Automation</h3>
+                <p>
+                    Accelerate your development and deployment cycles with continuous integration and automated workflows.
+                </p>
+                <ul class="subcategory-list">
+                    <li><strong>CI/CD Pipelines:</strong> Streamline software delivery using Jenkins, GitHub Actions, or Azure DevOps.</li>
+                    <li><strong>Infrastructure as Code (IaC):</strong> Automate provisioning using Terraform or CloudFormation.</li>
+                    <li><strong>Containerization:</strong> Deploy using Docker and Kubernetes for scalable microservices.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+            
+            <div class="category-card">
+                <h3>Cloud Monitoring & Management</h3>
+                <p>
+                    Ensure optimal performance and reliability through proactive monitoring and maintenance.
+                </p>
+                <ul class="subcategory-list">
+                    <li><strong>Performance Monitoring:</strong> Use tools like AWS CloudWatch or Azure Monitor.</li>
+                    <li><strong>Cost Optimization:</strong> Manage cloud usage and reduce operational costs.</li>
+                    <li><strong>Backup & Disaster Recovery:</strong> Ensure data availability and fast recovery.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+

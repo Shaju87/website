@@ -1,0 +1,262 @@
+﻿@{
+    ViewData["Title"] = "Web Development";
+}
+
+<style>
+    .webdev-section {
+        padding: 100px 0;
+        background: linear-gradient(135deg, #f9fcff, #ffffff);
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .webdev-container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+        .section-header h2 {
+            font-size: 2.8rem;
+            color: #0b3d91;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #0078d7, #00b4d8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+    /* Grid Layout */
+    .categories-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+    }
+
+    /* Card Styles */
+    .category-card {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        border-top: 6px solid #0078d7;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0,120,215,0.05) 0%, transparent 70%);
+            transform: rotate(45deg);
+            pointer-events: none;
+        }
+
+        .category-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-top-color: #00b4d8;
+        }
+
+        /* Card Titles */
+        .category-card h3 {
+            color: #0078d7;
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover h3 {
+            transform: scale(1.05);
+        }
+
+        .category-card p {
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+    /* Subcategory List */
+    .subcategory-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .subcategory-list li {
+            margin: 10px 0;
+            background: #f4f9ff;
+            border-left: 5px solid #0078d7;
+            padding: 10px 14px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+            .subcategory-list li::before {
+                content: '🔹';
+                margin-right: 8px;
+            }
+
+            .subcategory-list li:hover {
+                background: #e0f0ff;
+                transform: translateX(5px);
+            }
+
+        .subcategory-list strong {
+            color: #004d99;
+        }
+
+    /* Button Styles */
+    .learn-more-btn {
+        display: inline-block;
+        margin-top: 1rem;
+        background: linear-gradient(90deg, #0078d7, #00b4d8);
+        color: white;
+        padding: 12px 22px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .learn-more-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+    /* Floating animation for cards */
+    keyframes float {
+        0%, 100%
+
+    {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    }
+
+    .category-card {
+        animation: float 6s ease-in-out infinite;
+    }
+
+        /* Optional: subtle gradient effect on card borders */
+        .category-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, #0078d7, #00b4d8);
+            border-radius: 0 0 20px 20px;
+        }
+
+</style>
+
+<section class="webdev-section">
+    <div class="webdev-container">
+        <div class="section-header">
+            <h2>Web Development Solutions</h2>
+            <p>
+                We build modern, responsive, and high-performance websites and web applications tailored to your business needs.
+                From engaging frontends to robust backend systems, our web development services ensure seamless user experiences and scalable solutions.
+            </p>
+        </div>
+
+        <div class="categories-grid">
+            <!-- Frontend Development -->
+            <div class="category-card">
+                <h3>Frontend Development</h3>
+                <p>Create visually appealing, responsive, and interactive interfaces for websites and web apps.</p>
+                <ul class="subcategory-list">
+                    <li><strong>React.js:</strong> Component-based architecture for dynamic user interfaces.</li>
+                    <li><strong>Angular:</strong> Framework for building scalable single-page applications.</li>
+                    <li><strong>Vue.js:</strong> Lightweight framework for flexible and performant frontends.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+            <!-- Backend Development -->
+            <div class="category-card">
+                <h3>Backend Development</h3>
+                <p>Powerful, secure, and scalable server-side applications that handle data and business logic.</p>
+                <ul class="subcategory-list">
+                    <li><strong>Node.js:</strong> Fast, event-driven backend for scalable applications.</li>
+                    <li><strong>ASP.NET Core:</strong> Robust framework for enterprise-grade web apps.</li>
+                    <li><strong>Python Django & Flask:</strong> Efficient web frameworks for rapid development.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+            <!-- E-Commerce Development -->
+            <div class="category-card">
+                <h3>E-Commerce Solutions</h3>
+                <p>Build feature-rich online stores with smooth checkout, payment integration, and product management.</p>
+                <ul class="subcategory-list">
+                    <li><strong>Shopify & WooCommerce:</strong> Quick and scalable e-commerce platforms.</li>
+                    <li><strong>Custom E-Commerce:</strong> Tailored solutions for unique business requirements.</li>
+                    <li><strong>Payment Gateways:</strong> Integrate secure payment systems for smooth transactions.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+            <!-- Progressive Web Apps -->
+            <div class="category-card">
+                <h3>Progressive Web Apps (PWA)</h3>
+                <p>Fast, installable, and offline-capable web applications for enhanced user experience.</p>
+                <ul class="subcategory-list">
+                    <li><strong>Service Workers:</strong> Enable offline functionality and caching.</li>
+                    <li><strong>Web Manifest:</strong> Allows installation like native apps.</li>
+                    <li><strong>Push Notifications:</strong> Engage users directly from the browser.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+            <!-- API Development -->
+            <div class="category-card">
+                <h3>API & Integration</h3>
+                <p>Develop RESTful and GraphQL APIs to connect your frontend, backend, and third-party services efficiently.</p>
+                <ul class="subcategory-list">
+                    <li><strong>REST API:</strong> Standardized endpoints for seamless data exchange.</li>
+                    <li><strong>GraphQL:</strong> Flexible queries for fetching exactly the data needed.</li>
+                    <li><strong>Third-Party Integration:</strong> Connect with payment, analytics, and external services.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+
+            <!-- Web Maintenance & Support -->
+            <div class="category-card">
+                <h3>Maintenance & Support</h3>
+                <p>Keep your websites and apps up-to-date, secure, and high-performing with continuous support.</p>
+                <ul class="subcategory-list">
+                    <li><strong>Bug Fixes & Optimization:</strong> Ensure smooth and error-free operation.</li>
+                    <li><strong>Version Updates:</strong> Compatible with latest browsers and technologies.</li>
+                    <li><strong>Monitoring & Analytics:</strong> Track performance, traffic, and user behavior.</li>
+                </ul>
+                <a href="#" class="learn-more-btn">Explore More</a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,35 @@
+﻿@model TheMindSpire.Models.viewmodels.DataRequest;
+
+<style>
+    .form {
+        margin-top: 30px;
+    }
+    .h1{
+        margin-top: 100px;
+    }
+</style>
+<body>
+<h1 class="h1">Add Employee</h1>
+<section class="form">
+    <form asp-controller="Employees" asp-action="Add" method="post">
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" asp-for="Name" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Role</label>
+            <input type="text" class="form-control" asp-for="Role" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" asp-for="Email" required>
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-dark">Click to Add</button>
+        </div>
+    </form>
+</section>
+</body>

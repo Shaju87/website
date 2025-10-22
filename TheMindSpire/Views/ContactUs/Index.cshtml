@@ -1,0 +1,189 @@
+﻿@model TheMindSpire.Models.ContactData.ContactUs
+
+<style>
+    .contact {
+        margin-top: 30px;
+        padding: 80px;
+        background-color: #ffffff;
+    }
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+    }
+
+    .contact-item {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 32px;
+    }
+
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #2563EB, #3b82f6);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .icon-location, .icon-phone, .icon-email {
+        width: 24px;
+        height: 24px;
+        background: white;
+        border-radius: 4px;
+    }
+
+    .contact-details h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1e293b;
+        margin-bottom: 8px;
+    }
+
+    .contact-details p {
+        color: #64748b;
+        line-height: 1.6;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-input {
+        padding: 16px;
+        border: 2px solid #e2e8f0;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
+        font-family: inherit;
+    }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #2563EB;
+        }
+
+    .form-textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .success-message {
+        color: green;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+</style>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-description">
+                Ready to transform your business with innovative software solutions?
+            </p>
+        </div>
+
+        @if (ViewBag.Message != null)
+        {
+            <div class="success-message">@ViewBag.Message</div>
+        }
+
+        <div class="contact-content">
+            <!-- Left side contact info -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <div class="icon-location"></div>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Our Office</h4>
+                        <p>Madhapur<br>Hyderabad</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <div class="icon-phone"></div>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p>1234567899</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <div class="icon-email"></div>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>hello@themindspire.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side form -->
+            <div class="contact-form">
+                <div class="contact-form">
+                    <form id="contactForm" class="form">
+                        <div class="form-group">
+                            <input asp-for="Name" class="form-input" placeholder="Your Name" required />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input asp-for="Email" type="email" class="form-input" placeholder="Your Email" required />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea asp-for="Message" class="form-input form-textarea" placeholder="Your Message" rows="5" required></textarea>
+                            <span asp-validation-for="Message" class="text-danger"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+
+                @section Scripts {
+                    <partial name="_ValidationScriptsPartial" />
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+                    <script>
+                        $(document).ready(function () {
+                            $('#contactForm').submit(function (e) {
+                                e.preventDefault(); // prevent normal form submission
+
+                                var formData = $(this).serialize();
+
+                                $.ajax({
+                                    url: '/ContactUs/Index',
+                                    type: 'POST',
+                                    data: formData,
+                                    success: function (response) {
+                                        alert('Your message has been sent successfully!');
+                                        $('#contactForm')[0].reset(); // clear form
+                                    },
+                                    error: function () {
+                                        alert('Oops! Something went wrong. Please try again.');
+                                    }
+                                });
+                            });
+                        });
+                    </script>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>
