@@ -1,0 +1,15 @@
+# robots.txt for TheMindSpire
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://website-production-0fcd.up.railway.app/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /bin/
+Disallow: /obj/
+
+# Allow all images and CSS
+Allow: /css/
+Allow: /images/
+Allow: /js/
