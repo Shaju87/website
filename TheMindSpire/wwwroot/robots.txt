@@ -1,4 +1,4 @@
-# robots.txt for TheMindSpire
+# robots.txt for TheMindSpire Solutions Private Limited
 User-agent: *
 Allow: /
 
